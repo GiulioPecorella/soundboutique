@@ -5,6 +5,6 @@ module.exports = {
       browsers: "last 2 versions"
     },
     "postcss-custom-media": {},
-    autoprefixer: {}
+    tailwindcss: {},
   }
 };
