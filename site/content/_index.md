@@ -9,4 +9,3 @@ box_intro:
   - text: "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability."
     player: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/989005966&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
 ---
-
