@@ -1,35 +1,17 @@
-<div class="h-screen py-20 bg-cover bg-top" id="content" style="background-image: url('{{.image}}');">
+<div class="h-screen py-20 bg-cover bg-top" id="content" style="background-image: url('{{.imageUrl}}');">
   <div class="container mb-20 justify-self-auto mx-auto text-center">
     <img class="my-0 mx-auto mb-10" src="./sb-l.png">
     <a href="#" class="border-white bg-white py-4 px-12 text-2xl border-4 text-transparent">SBS SHOP</a>
   </div>
   <div class="mb-20 grid grid-cols-1 md:grid-cols-3 md:gap-4 bg-black flex bg-opacity-75 text-white">
-    {{ range .box_intro}}
-      BUNGA
-    {{ else }}
-      PARREBBE VUOTO
+    {{ range .boxes}}
+      <div class="p-2">
+        <div class="text-lg text-center border-b border-solid border-white py-2">{{.title}}</div>
+        <div class="py-5">
+          {{.content}}
+          <iframe class="mt-5" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="{{.player}}"></iframe>
+        </div>
+      </div>
     {{ end }}
-    <div class="p-2">
-      <div class="text-lg text-center border-b border-solid border-white py-2">RECORDING</div>
-      <div class="py-5">
-        Vieni nel nostro studio a registrare le tua voce o il tuo strumento! I nostri microfoni di altissima qualità, i nostri preamplificatori, il nostro sistema di monitoring e l'ambiente trattato acusticamente  garantiranno una ripresa hi-fi.
-        <iframe class="mt-5" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/989005966&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-256147702" title="Sound Boutique Studio" target="_blank" style="color: #cccccc; text-decoration: none;">Sound Boutique Studio</a> · <a href="https://soundcloud.com/user-256147702/zip-one-giona-oggi-rec-mixing" title="Zip One, Giona - Oggi (Rec, mixing, mastering) Urban" target="_blank" style="color: #cccccc; text-decoration: none;">Zip One, Giona - Oggi (Rec, mixing, mastering) Urban</a></div>
-      </div>
-    </div>
-    <div class="p-2">
-      <div class="text-lg text-center border-b border-solid border-white py-2">MIXING</div>
-      <div class="py-5">
-        Affidaci il mixing del tuo brano per farlo suonare bilanciato e tridimensionale. La nostra vasta gamma di plugin (Acustica Audio, Plugin Alliance, FabFilter...) sarà scelta minuziosamente per garantire un mix preciso e pulito, pronto per la fase di mastering.
-        <iframe class="mt-5" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/989005966&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-256147702" title="Sound Boutique Studio" target="_blank" style="color: #cccccc; text-decoration: none;">Sound Boutique Studio</a> · <a href="https://soundcloud.com/user-256147702/zip-one-giona-oggi-rec-mixing" title="Zip One, Giona - Oggi (Rec, mixing, mastering) Urban" target="_blank" style="color: #cccccc; text-decoration: none;">Zip One, Giona - Oggi (Rec, mixing, mastering) Urban</a></div>
-      </div>
-    </div>
-    <div class="p-2">
-      <div class="text-lg text-center border-b border-solid border-white py-2">MASTERING</div>
-      <div class="py-5">
-        Mixi le tue canzoni? Hai affidato il tuo mix ad un mixing engineer? Sei pronto per la finalizzazione del tuo brano. Affidaci il mastering e il tuo brano suonerà alla perfezione su qualsiasi dispositivo che lo riprodurrà. 
-        <iframe class="mt-5" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/989005966&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-256147702" title="Sound Boutique Studio" target="_blank" style="color: #cccccc; text-decoration: none;">Sound Boutique Studio</a> · <a href="https://soundcloud.com/user-256147702/zip-one-giona-oggi-rec-mixing" title="Zip One, Giona - Oggi (Rec, mixing, mastering) Urban" target="_blank" style="color: #cccccc; text-decoration: none;">Zip One, Giona - Oggi (Rec, mixing, mastering) Urban</a></div>
-      </div>
-    </div>
   </div>
-  
 </div>
